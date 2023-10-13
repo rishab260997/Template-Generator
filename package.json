@@ -14,8 +14,15 @@
   "contributes": {
     "commands": [
       {
-        "command": "tempelate-generator.helloWorld",
-        "title": "Hello World"
+        "command": "extension.generateComponentFolder",
+        "title": "Tempelate Generator",
+        "properties": {
+          "template-generator.componentFolderName": {
+            "type": "string",
+            "default": "components",
+            "description": "The name of the component folder."
+          }
+        }
       }
     ]
   },
